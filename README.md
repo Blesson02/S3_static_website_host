@@ -19,3 +19,10 @@ Now enable static website hosting for that bucket. For that got to your bucket -
 ![image](https://github.com/Blesson02/S3_static_website_host/assets/108075329/7fb9532a-ade0-4c7c-b598-a3d77f19f9f4)
 
 `http://sample.example.com.s3-website-us-east-1.amazonaws.com`
+
+## Step3 : 
+Now Upload a sample html website contents to our bucket. (For this example i use "https://www.tooplate.com/" site ).
+Download the site to your local machine and upload it to S3 bucket.
+
+## Step4 :
+Now our website shows 403 Forbidden error. That's because by default S3 bucket is in private mode. So we need to open it to public and also need to add one bucket policy to access random users.
