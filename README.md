@@ -26,3 +26,29 @@ Download the site to your local machine and upload it to S3 bucket.
 
 ## Step4 :
 Now our website shows 403 Forbidden error. That's because by default S3 bucket is in private mode. So we need to open it to public and also need to add one bucket policy to access random users.
+
+`Generate bucket policy : https://awspolicygen.s3.amazonaws.com/policygen.html`
+
+```
+{
+  "Id": "Policy1690642454153",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1690642452274",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::sample.example.com",
+      "Principal": "*"
+    }
+  ]
+}
+```
+
+Then turn off "Block all public access"
+
+Now the site will work like showcase.
+
+`http://sample.example.com.s3-website-us-east-1.amazonaws.com`
