@@ -15,7 +15,6 @@ S3 bucket name : sample.example.com
 
 ## Step2 : 
 Now enable static website hosting for that bucket. For that got to your bucket --> Properties --> "Static website hosting" --> set it to enabled --> set "Index document" as index.html. Then save it and we will get a URL for our site.
+![image](https://github.com/Blesson02/S3_static_website_host/assets/108075329/7fb9532a-ade0-4c7c-b598-a3d77f19f9f4)
 
-![image](https://github.com/Blesson02/S3_static_website_host/assets/108075329/453fd909-79fb-47db-aded-77f6378a5798)
-
-`aws s3 cp /var/www/html/img/*  s3://bucket_name  --profile=new`
+`http://sample.example.com.s3-website-us-east-1.amazonaws.com`
