@@ -8,7 +8,7 @@ A website that doesn’t involve server-side communication is called a static we
 
 
 ## Step1 : 
-First create an S3 bucket and give your website DNS as its name.
+First create an S3 bucket and give your website **DNS on CNAME** as its name.
 
 DNS name : example.com
 S3 bucket name : sample.example.com
