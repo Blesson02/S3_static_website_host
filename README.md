@@ -9,11 +9,11 @@ A website that doesn’t involve server-side communication is called a static we
 
 ## Step1 : 
 First create an S3 bucket and give your website **DNS on CNAME** as its name. Otherwise Cname wont work as expected.
-
+```
 DNS name : example.com
 CNAME : sample.example.com
 S3 bucket name : sample.example.com
-
+```
 ## Step2 : 
 Now enable static website hosting for that bucket. For that got to your bucket --> Properties --> "Static website hosting" --> set it to enabled --> set "Index document" as index.html. Then save it and we will get a URL for our site.
 
