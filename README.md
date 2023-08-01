@@ -58,6 +58,6 @@ Now create a CNAME record and point `sample.example.com` to `sample.example.com.
 
 ## Extra
 
-If you are using AWS Route 53, please create record like below, so that site loading will be faster.
+If you are using AWS Route 53, please create DNS record like below, so that site loading will be faster.
 
 ![image](https://github.com/Blesson02/S3_static_website_host/assets/108075329/84073c8a-755e-4dce-9274-a32b2335295d)
